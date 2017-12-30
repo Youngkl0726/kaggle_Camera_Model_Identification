@@ -1,0 +1,16 @@
+net: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50/resnet50.prototxt"
+
+average_loss: 20
+lr_policy: "multistep"
+base_lr: 0.0002
+gamma: 0.5
+stepvalue: 5000
+stepvalue: 10000
+stepvalue: 15000
+max_iter:  20000
+display: 50
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 2500
+snapshot_prefix: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50/model/resnet50"
+solver_mode: GPU
