@@ -13,6 +13,6 @@ max_iter:  700
 display: 20
 momentum: 0.9
 weight_decay: 0.0005
-snapshot: 2500
+snapshot: 100
 snapshot_prefix: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50/model_train_val/model/resnet50"
 solver_mode: GPU
