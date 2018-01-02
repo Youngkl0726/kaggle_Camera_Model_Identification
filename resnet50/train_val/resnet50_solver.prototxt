@@ -1,7 +1,7 @@
 net: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50/model_train_val/resnet50.prototxt"
 
-test_iter: 6
-test_interval: 1000
+test_iter: 5
+test_interval: 500
 average_loss: 20
 lr_policy: "multistep"
 base_lr: 0.0002
@@ -11,9 +11,9 @@ stepvalue: 6000
 stepvalue: 8000
 stepvalue: 10000
 max_iter:  11000
-display: 50
+display: 20
 momentum: 0.9
 weight_decay: 0.0005
-snapshot: 100
+snapshot: 1000
 snapshot_prefix: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50/model_train_val/model/resnet50"
 solver_mode: GPU
