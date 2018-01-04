@@ -13,7 +13,7 @@ log=${exp}/log_AddFC/resnet50_AddFC.log
 
   mkdir -p $(dirname ${log})
 
-  MV2_USE_CUDA=1 MV2_ENABLE_AFFINITY=0 MV2_SMP_USE_CMA=0 srun -p AD2 \
+  MV2_USE_CUDA=1 MV2_ENABLE_AFFINITY=0 MV2_SMP_USE_CMA=0 srun -p Zgf \
   --gres=gpu:8 -n1 --ntasks-per-node=1 --job-name=resnet50fc \
   ${CAFFE_DIR}/build/tools/caffe train --solver=${solver} \
   --weights=/mnt/lustre/yangkunlin/kaggle_camera/resnet50/ResNet-50-model.caffemodel \

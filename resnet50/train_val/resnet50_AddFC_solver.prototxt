@@ -6,11 +6,11 @@ average_loss: 20
 lr_policy: "multistep"
 base_lr: 0.004
 gamma: 0.5
-stepvalue: 4000
-stepvalue: 8000
-stepvalue: 12000
-stepvalue: 16000
-max_iter:  20000
+stepvalue: 5000
+stepvalue: 10000
+stepvalue: 15000
+stepvalue: 20000
+max_iter:  24000
 display: 20
 momentum: 0.9
 weight_decay: 0.0005
