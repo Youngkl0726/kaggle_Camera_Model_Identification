@@ -6,42 +6,18 @@ layer {
   top: "data"
   top: "label"
   transform_param {
-    mirror: true
+    mirror: false
     crop_size: 299
     mean_value: 103.939
     mean_value: 116.779
     mean_value: 123.68
   }
   image_data_param {
-    source: "/mnt/lustre/yangkunlin/kaggle_camera/data/train_aug.txt"
-    batch_size: 12
-    shuffle: true
-    root_folder: "/mnt/lustre/yangkunlin/kaggle_camera/data/train_aug"
+    source: "/mnt/lustre/yangkunlin/kaggle_camera/data/${list}.txt"
+    batch_size: 16
+    shuffle: false
+    root_folder: "/mnt/lustre/yangkunlin/kaggle_camera/data/test/"
   }
-  include {
-    phase: TRAIN
-  }
-}
-
-layer {
-  name: "data"
-  type: "ImageData"
-  top: "data"
-  top: "label"
-  transform_param {
-    mirror: true
-  crop_size: 299
-    mean_value: 103.939
-    mean_value: 116.779
-    mean_value: 123.68
-  }
-  image_data_param {
-    root_folder: "/mnt/lustre/yangkunlin/kaggle_camera/data/train"
-  source: "/mnt/lustre/yangkunlin/kaggle_camera/data/val.txt"
-    batch_size: 12
-    shuffle: true
-  }
-  include { phase: TEST}
 }
 
 layer {
@@ -63,7 +39,7 @@ layer {
   bottom: "conv1_3x3_s2"
   top: "conv1_3x3_s2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -101,7 +77,7 @@ layer {
   bottom: "conv2_3x3_s1"
   top: "conv2_3x3_s1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -139,7 +115,7 @@ layer {
   bottom: "conv3_3x3_s1"
   top: "conv3_3x3_s1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -177,7 +153,7 @@ layer {
   bottom: "inception_stem1_3x3_s2"
   top: "inception_stem1_3x3_s2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -233,7 +209,7 @@ layer {
   bottom: "inception_stem2_3x3_reduce"
   top: "inception_stem2_3x3_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -271,7 +247,7 @@ layer {
   bottom: "inception_stem2_3x3"
   top: "inception_stem2_3x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -309,7 +285,7 @@ layer {
   bottom: "inception_stem2_1x7_reduce"
   top: "inception_stem2_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -349,7 +325,7 @@ layer {
   bottom: "inception_stem2_1x7"
   top: "inception_stem2_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -389,7 +365,7 @@ layer {
   bottom: "inception_stem2_7x1"
   top: "inception_stem2_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -427,7 +403,7 @@ layer {
   bottom: "inception_stem2_3x3_2"
   top: "inception_stem2_3x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -472,7 +448,7 @@ layer {
   bottom: "inception_stem3_3x3_s2"
   top: "inception_stem3_3x3_s2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -528,7 +504,7 @@ layer {
   bottom: "inception_a1_1x1_2"
   top: "inception_a1_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -566,7 +542,7 @@ layer {
   bottom: "inception_a1_3x3_reduce"
   top: "inception_a1_3x3_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -604,7 +580,7 @@ layer {
   bottom: "inception_a1_3x3"
   top: "inception_a1_3x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -642,7 +618,7 @@ layer {
   bottom: "inception_a1_3x3_2_reduce"
   top: "inception_a1_3x3_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -680,7 +656,7 @@ layer {
   bottom: "inception_a1_3x3_2"
   top: "inception_a1_3x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -718,7 +694,7 @@ layer {
   bottom: "inception_a1_3x3_3"
   top: "inception_a1_3x3_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -768,7 +744,7 @@ layer {
   bottom: "inception_a1_1x1"
   top: "inception_a1_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -815,7 +791,7 @@ layer {
   bottom: "inception_a2_1x1_2"
   top: "inception_a2_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -853,7 +829,7 @@ layer {
   bottom: "inception_a2_3x3_reduce"
   top: "inception_a2_3x3_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -891,7 +867,7 @@ layer {
   bottom: "inception_a2_3x3"
   top: "inception_a2_3x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -929,7 +905,7 @@ layer {
   bottom: "inception_a2_3x3_2_reduce"
   top: "inception_a2_3x3_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -967,7 +943,7 @@ layer {
   bottom: "inception_a2_3x3_2"
   top: "inception_a2_3x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1005,7 +981,7 @@ layer {
   bottom: "inception_a2_3x3_3"
   top: "inception_a2_3x3_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1055,7 +1031,7 @@ layer {
   bottom: "inception_a2_1x1"
   top: "inception_a2_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1102,7 +1078,7 @@ layer {
   bottom: "inception_a3_1x1_2"
   top: "inception_a3_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1140,7 +1116,7 @@ layer {
   bottom: "inception_a3_3x3_reduce"
   top: "inception_a3_3x3_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1178,7 +1154,7 @@ layer {
   bottom: "inception_a3_3x3"
   top: "inception_a3_3x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1216,7 +1192,7 @@ layer {
   bottom: "inception_a3_3x3_2_reduce"
   top: "inception_a3_3x3_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1254,7 +1230,7 @@ layer {
   bottom: "inception_a3_3x3_2"
   top: "inception_a3_3x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1292,7 +1268,7 @@ layer {
   bottom: "inception_a3_3x3_3"
   top: "inception_a3_3x3_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1342,7 +1318,7 @@ layer {
   bottom: "inception_a3_1x1"
   top: "inception_a3_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1389,7 +1365,7 @@ layer {
   bottom: "inception_a4_1x1_2"
   top: "inception_a4_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1427,7 +1403,7 @@ layer {
   bottom: "inception_a4_3x3_reduce"
   top: "inception_a4_3x3_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1465,7 +1441,7 @@ layer {
   bottom: "inception_a4_3x3"
   top: "inception_a4_3x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1503,7 +1479,7 @@ layer {
   bottom: "inception_a4_3x3_2_reduce"
   top: "inception_a4_3x3_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1541,7 +1517,7 @@ layer {
   bottom: "inception_a4_3x3_2"
   top: "inception_a4_3x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1579,7 +1555,7 @@ layer {
   bottom: "inception_a4_3x3_3"
   top: "inception_a4_3x3_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1629,7 +1605,7 @@ layer {
   bottom: "inception_a4_1x1"
   top: "inception_a4_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1676,7 +1652,7 @@ layer {
   bottom: "reduction_a_3x3"
   top: "reduction_a_3x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1714,7 +1690,7 @@ layer {
   bottom: "reduction_a_3x3_2_reduce"
   top: "reduction_a_3x3_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1752,7 +1728,7 @@ layer {
   bottom: "reduction_a_3x3_2"
   top: "reduction_a_3x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1790,7 +1766,7 @@ layer {
   bottom: "reduction_a_3x3_3"
   top: "reduction_a_3x3_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1847,7 +1823,7 @@ layer {
   bottom: "inception_b1_1x1_2"
   top: "inception_b1_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1885,7 +1861,7 @@ layer {
   bottom: "inception_b1_1x7_reduce"
   top: "inception_b1_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1925,7 +1901,7 @@ layer {
   bottom: "inception_b1_1x7"
   top: "inception_b1_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -1965,7 +1941,7 @@ layer {
   bottom: "inception_b1_7x1"
   top: "inception_b1_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2003,7 +1979,7 @@ layer {
   bottom: "inception_b1_7x1_2_reduce"
   top: "inception_b1_7x1_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2043,7 +2019,7 @@ layer {
   bottom: "inception_b1_7x1_2"
   top: "inception_b1_7x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2083,7 +2059,7 @@ layer {
   bottom: "inception_b1_1x7_2"
   top: "inception_b1_1x7_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2123,7 +2099,7 @@ layer {
   bottom: "inception_b1_7x1_3"
   top: "inception_b1_7x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2163,7 +2139,7 @@ layer {
   bottom: "inception_b1_1x7_3"
   top: "inception_b1_1x7_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2213,7 +2189,7 @@ layer {
   bottom: "inception_b1_1x1"
   top: "inception_b1_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2260,7 +2236,7 @@ layer {
   bottom: "inception_b2_1x1_2"
   top: "inception_b2_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2298,7 +2274,7 @@ layer {
   bottom: "inception_b2_1x7_reduce"
   top: "inception_b2_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2338,7 +2314,7 @@ layer {
   bottom: "inception_b2_1x7"
   top: "inception_b2_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2378,7 +2354,7 @@ layer {
   bottom: "inception_b2_7x1"
   top: "inception_b2_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2416,7 +2392,7 @@ layer {
   bottom: "inception_b2_7x1_2_reduce"
   top: "inception_b2_7x1_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2456,7 +2432,7 @@ layer {
   bottom: "inception_b2_7x1_2"
   top: "inception_b2_7x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2496,7 +2472,7 @@ layer {
   bottom: "inception_b2_1x7_2"
   top: "inception_b2_1x7_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2536,7 +2512,7 @@ layer {
   bottom: "inception_b2_7x1_3"
   top: "inception_b2_7x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2576,7 +2552,7 @@ layer {
   bottom: "inception_b2_1x7_3"
   top: "inception_b2_1x7_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2626,7 +2602,7 @@ layer {
   bottom: "inception_b2_1x1"
   top: "inception_b2_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2673,7 +2649,7 @@ layer {
   bottom: "inception_b3_1x1_2"
   top: "inception_b3_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2711,7 +2687,7 @@ layer {
   bottom: "inception_b3_1x7_reduce"
   top: "inception_b3_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2751,7 +2727,7 @@ layer {
   bottom: "inception_b3_1x7"
   top: "inception_b3_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2791,7 +2767,7 @@ layer {
   bottom: "inception_b3_7x1"
   top: "inception_b3_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2829,7 +2805,7 @@ layer {
   bottom: "inception_b3_7x1_2_reduce"
   top: "inception_b3_7x1_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2869,7 +2845,7 @@ layer {
   bottom: "inception_b3_7x1_2"
   top: "inception_b3_7x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2909,7 +2885,7 @@ layer {
   bottom: "inception_b3_1x7_2"
   top: "inception_b3_1x7_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2949,7 +2925,7 @@ layer {
   bottom: "inception_b3_7x1_3"
   top: "inception_b3_7x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -2989,7 +2965,7 @@ layer {
   bottom: "inception_b3_1x7_3"
   top: "inception_b3_1x7_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3039,7 +3015,7 @@ layer {
   bottom: "inception_b3_1x1"
   top: "inception_b3_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3086,7 +3062,7 @@ layer {
   bottom: "inception_b4_1x1_2"
   top: "inception_b4_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3124,7 +3100,7 @@ layer {
   bottom: "inception_b4_1x7_reduce"
   top: "inception_b4_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3164,7 +3140,7 @@ layer {
   bottom: "inception_b4_1x7"
   top: "inception_b4_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3204,7 +3180,7 @@ layer {
   bottom: "inception_b4_7x1"
   top: "inception_b4_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3242,7 +3218,7 @@ layer {
   bottom: "inception_b4_7x1_2_reduce"
   top: "inception_b4_7x1_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3282,7 +3258,7 @@ layer {
   bottom: "inception_b4_7x1_2"
   top: "inception_b4_7x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3322,7 +3298,7 @@ layer {
   bottom: "inception_b4_1x7_2"
   top: "inception_b4_1x7_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3362,7 +3338,7 @@ layer {
   bottom: "inception_b4_7x1_3"
   top: "inception_b4_7x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3402,7 +3378,7 @@ layer {
   bottom: "inception_b4_1x7_3"
   top: "inception_b4_1x7_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3452,7 +3428,7 @@ layer {
   bottom: "inception_b4_1x1"
   top: "inception_b4_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3499,7 +3475,7 @@ layer {
   bottom: "inception_b5_1x1_2"
   top: "inception_b5_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3537,7 +3513,7 @@ layer {
   bottom: "inception_b5_1x7_reduce"
   top: "inception_b5_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3577,7 +3553,7 @@ layer {
   bottom: "inception_b5_1x7"
   top: "inception_b5_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3617,7 +3593,7 @@ layer {
   bottom: "inception_b5_7x1"
   top: "inception_b5_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3655,7 +3631,7 @@ layer {
   bottom: "inception_b5_7x1_2_reduce"
   top: "inception_b5_7x1_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3695,7 +3671,7 @@ layer {
   bottom: "inception_b5_7x1_2"
   top: "inception_b5_7x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3735,7 +3711,7 @@ layer {
   bottom: "inception_b5_1x7_2"
   top: "inception_b5_1x7_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3775,7 +3751,7 @@ layer {
   bottom: "inception_b5_7x1_3"
   top: "inception_b5_7x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3815,7 +3791,7 @@ layer {
   bottom: "inception_b5_1x7_3"
   top: "inception_b5_1x7_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3865,7 +3841,7 @@ layer {
   bottom: "inception_b5_1x1"
   top: "inception_b5_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3912,7 +3888,7 @@ layer {
   bottom: "inception_b6_1x1_2"
   top: "inception_b6_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3950,7 +3926,7 @@ layer {
   bottom: "inception_b6_1x7_reduce"
   top: "inception_b6_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -3990,7 +3966,7 @@ layer {
   bottom: "inception_b6_1x7"
   top: "inception_b6_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4030,7 +4006,7 @@ layer {
   bottom: "inception_b6_7x1"
   top: "inception_b6_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4068,7 +4044,7 @@ layer {
   bottom: "inception_b6_7x1_2_reduce"
   top: "inception_b6_7x1_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4108,7 +4084,7 @@ layer {
   bottom: "inception_b6_7x1_2"
   top: "inception_b6_7x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4148,7 +4124,7 @@ layer {
   bottom: "inception_b6_1x7_2"
   top: "inception_b6_1x7_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4188,7 +4164,7 @@ layer {
   bottom: "inception_b6_7x1_3"
   top: "inception_b6_7x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4228,7 +4204,7 @@ layer {
   bottom: "inception_b6_1x7_3"
   top: "inception_b6_1x7_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4278,7 +4254,7 @@ layer {
   bottom: "inception_b6_1x1"
   top: "inception_b6_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4325,7 +4301,7 @@ layer {
   bottom: "inception_b7_1x1_2"
   top: "inception_b7_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4363,7 +4339,7 @@ layer {
   bottom: "inception_b7_1x7_reduce"
   top: "inception_b7_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4403,7 +4379,7 @@ layer {
   bottom: "inception_b7_1x7"
   top: "inception_b7_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4443,7 +4419,7 @@ layer {
   bottom: "inception_b7_7x1"
   top: "inception_b7_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4481,7 +4457,7 @@ layer {
   bottom: "inception_b7_7x1_2_reduce"
   top: "inception_b7_7x1_2_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4521,7 +4497,7 @@ layer {
   bottom: "inception_b7_7x1_2"
   top: "inception_b7_7x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4561,7 +4537,7 @@ layer {
   bottom: "inception_b7_1x7_2"
   top: "inception_b7_1x7_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4601,7 +4577,7 @@ layer {
   bottom: "inception_b7_7x1_3"
   top: "inception_b7_7x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4641,7 +4617,7 @@ layer {
   bottom: "inception_b7_1x7_3"
   top: "inception_b7_1x7_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4691,7 +4667,7 @@ layer {
   bottom: "inception_b7_1x1"
   top: "inception_b7_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4738,7 +4714,7 @@ layer {
   bottom: "reduction_b_3x3_reduce"
   top: "reduction_b_3x3_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4776,7 +4752,7 @@ layer {
   bottom: "reduction_b_3x3"
   top: "reduction_b_3x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4814,7 +4790,7 @@ layer {
   bottom: "reduction_b_1x7_reduce"
   top: "reduction_b_1x7_reduce"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4854,7 +4830,7 @@ layer {
   bottom: "reduction_b_1x7"
   top: "reduction_b_1x7"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4894,7 +4870,7 @@ layer {
   bottom: "reduction_b_7x1"
   top: "reduction_b_7x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4932,7 +4908,7 @@ layer {
   bottom: "reduction_b_3x3_2"
   top: "reduction_b_3x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -4989,7 +4965,7 @@ layer {
   bottom: "inception_c1_1x1_2"
   top: "inception_c1_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5027,7 +5003,7 @@ layer {
   bottom: "inception_c1_1x1_3"
   top: "inception_c1_1x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5067,7 +5043,7 @@ layer {
   bottom: "inception_c1_1x3"
   top: "inception_c1_1x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5107,7 +5083,7 @@ layer {
   bottom: "inception_c1_3x1"
   top: "inception_c1_3x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5145,7 +5121,7 @@ layer {
   bottom: "inception_c1_1x1_4"
   top: "inception_c1_1x1_4"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5185,7 +5161,7 @@ layer {
   bottom: "inception_c1_3x1_2"
   top: "inception_c1_3x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5225,7 +5201,7 @@ layer {
   bottom: "inception_c1_1x3_2"
   top: "inception_c1_1x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5265,7 +5241,7 @@ layer {
   bottom: "inception_c1_1x3_3"
   top: "inception_c1_1x3_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5305,7 +5281,7 @@ layer {
   bottom: "inception_c1_3x1_3"
   top: "inception_c1_3x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5355,7 +5331,7 @@ layer {
   bottom: "inception_c1_1x1"
   top: "inception_c1_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5404,7 +5380,7 @@ layer {
   bottom: "inception_c2_1x1_2"
   top: "inception_c2_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5442,7 +5418,7 @@ layer {
   bottom: "inception_c2_1x1_3"
   top: "inception_c2_1x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5482,7 +5458,7 @@ layer {
   bottom: "inception_c2_1x3"
   top: "inception_c2_1x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5522,7 +5498,7 @@ layer {
   bottom: "inception_c2_3x1"
   top: "inception_c2_3x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5560,7 +5536,7 @@ layer {
   bottom: "inception_c2_1x1_4"
   top: "inception_c2_1x1_4"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5600,7 +5576,7 @@ layer {
   bottom: "inception_c2_3x1_2"
   top: "inception_c2_3x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5640,7 +5616,7 @@ layer {
   bottom: "inception_c2_1x3_2"
   top: "inception_c2_1x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5680,7 +5656,7 @@ layer {
   bottom: "inception_c2_1x3_3"
   top: "inception_c2_1x3_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5720,7 +5696,7 @@ layer {
   bottom: "inception_c2_3x1_3"
   top: "inception_c2_3x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5770,7 +5746,7 @@ layer {
   bottom: "inception_c2_1x1"
   top: "inception_c2_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5819,7 +5795,7 @@ layer {
   bottom: "inception_c3_1x1_2"
   top: "inception_c3_1x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5857,7 +5833,7 @@ layer {
   bottom: "inception_c3_1x1_3"
   top: "inception_c3_1x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5897,7 +5873,7 @@ layer {
   bottom: "inception_c3_1x3"
   top: "inception_c3_1x3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5937,7 +5913,7 @@ layer {
   bottom: "inception_c3_3x1"
   top: "inception_c3_3x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -5975,7 +5951,7 @@ layer {
   bottom: "inception_c3_1x1_4"
   top: "inception_c3_1x1_4"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -6015,7 +5991,7 @@ layer {
   bottom: "inception_c3_3x1_2"
   top: "inception_c3_3x1_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -6055,7 +6031,7 @@ layer {
   bottom: "inception_c3_1x3_2"
   top: "inception_c3_1x3_2"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -6095,7 +6071,7 @@ layer {
   bottom: "inception_c3_1x3_3"
   top: "inception_c3_1x3_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -6135,7 +6111,7 @@ layer {
   bottom: "inception_c3_3x1_3"
   top: "inception_c3_3x1_3"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -6185,7 +6161,7 @@ layer {
   bottom: "inception_c3_1x1"
   top: "inception_c3_1x1"
   batch_norm_param {
-    use_global_stats: false
+    use_global_stats: true
     eps: 0.001
   }
 }
@@ -6260,19 +6236,9 @@ layer {
 }
 
 layer {
-  name: "accuracy"
-  type: "Accuracy"
+  name: "prob"
+  type: "Softmax"
   bottom: "classifier1"
-  bottom: "label"
-  top: "accuracy"
-  include {
-    phase: TEST
-  }
+  top: "prob"
 }
-layer {
-  name: "loss"
-  type: "SoftmaxWithLoss"
-  bottom: "classifier1"
-  bottom: "label"
-  top: "loss"
-}
+
