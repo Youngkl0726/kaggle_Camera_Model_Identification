@@ -12,13 +12,13 @@ layer {
     mean_value: 123.68
   }
   image_data_param {
-    source: "/mnt/lustre/yangkunlin/kaggle_camera/data/train.txt"
+    source: "/mnt/lustre/yangkunlin/kaggle_camera/data/train_aug.txt"
     batch_size: 128
     #crop_size: 186
     #new_height: 224
     #new_width: 224
     shuffle: true
-    root_folder: "/mnt/lustre/yangkunlin/kaggle_camera/data/train"
+    root_folder: "/mnt/lustre/yangkunlin/kaggle_camera/data/train_aug"
   }
   include {
     phase: TRAIN
@@ -3211,11 +3211,37 @@ layer {
   bottom: "gather1"
   top: "fc8_jstl"
   param {
-    lr_mult: 1
+    lr_mult: 2
     decay_mult: 1
   }
   param {
+    lr_mult: 4
+    decay_mult: 0
+  }
+  inner_product_param {
+    num_output: 256
+    weight_filler {
+      type: "gaussian"
+      std: 0.001
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+
+layer {
+  name: "fc8_jstl_add"
+  type: "InnerProduct"
+  bottom: "fc8_jstl"
+  top: "fc8_jstl_add"
+  param {
     lr_mult: 2
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 4
     decay_mult: 0
   }
   inner_product_param {
@@ -3234,7 +3260,7 @@ layer {
 layer {
   name: "accuracy"
   type: "Accuracy"
-  bottom: "fc8_jstl"
+  bottom: "fc8_jstl_add"
   bottom: "label_g"
   top: "accuracy"
   include {
@@ -3245,7 +3271,7 @@ layer {
 layer {
   name: "loss"
   type: "SoftmaxWithLoss"
-  bottom: "fc8_jstl"
+  bottom: "fc8_jstl_add"
   bottom: "label_g"
   top: "loss"
 }
