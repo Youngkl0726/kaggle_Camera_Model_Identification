@@ -27,5 +27,5 @@ def plotData(X, y):
     plt.legend() 
     plt.show()#让绘制的图像在屏幕上显示出来  
 if __name__=="__main__":
-    (X,y) = loadData('./resnet50.log.train')  
+    (X,y) = loadData('./inception_v4.log.train')
     plotData(X,y)

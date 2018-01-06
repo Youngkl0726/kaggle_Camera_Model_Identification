@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3592619a-53ee-40de-afce-cdf8f0b4b175" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inception_v4/inception_v4.prototxt" afterPath="$PROJECT_DIR$/inception_v4/inception_v4.prototxt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualize_log/pain_loss.py" afterPath="$PROJECT_DIR$/visualize_log/pain_loss.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,65 +13,83 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult.coverage" NAME="ProcessResult Coverage Results" MODIFIED="1515152638213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult.coverage" NAME="ProcessResult Coverage Results" MODIFIED="1515222220881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Kaggle_Camera_Model_Identification$GetData.coverage" NAME="GetData Coverage Results" MODIFIED="1514553557767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$modify.coverage" NAME="modify Coverage Results" MODIFIED="1515161310006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$DataAug.coverage" NAME="DataAug Coverage Results" MODIFIED="1514901408467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$pain_loss.coverage" NAME="pain_loss Coverage Results" MODIFIED="1515043837202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualize_log" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$pain_loss.coverage" NAME="pain_loss Coverage Results" MODIFIED="1515222225277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualize_log" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$GenTest.coverage" NAME="GenTest Coverage Results" MODIFIED="1514708593599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ConvertTif2Jpg.coverage" NAME="ConvertTif2Jpg Coverage Results" MODIFIED="1514745423987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="res50_corr_train.prototxt" pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/disparity_model/res50_corr_train.prototxt">
+      <file leaf-file-name="inceptionResNetV2.prototxt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2.prototxt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inceptionResNetV2_test.prototxt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2_test.prototxt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96164">
+              <caret line="14458" column="21" lean-forward="false" selection-start-line="14458" selection-start-column="21" selection-end-line="14458" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="incepResV2_solver.prototxt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inceptionResNetV2/incepResV2_solver.prototxt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="89" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="incepResV2.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inceptionResNetV2/incepResV2.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+              <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="res_segdepth.sh" pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/disparity_model/res_segdepth.sh">
+      <file leaf-file-name="resnet50_sensenet_AddFC_test.prototxt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC_test.prototxt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="3223" column="0" lean-forward="false" selection-start-line="3223" selection-start-column="0" selection-end-line="3228" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resnet50_sense.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/resnet50_sense.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+              <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inception_v4_test.prototxt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inception_v4/inception_v4_test.prototxt">
+      <file leaf-file-name="Resnet50_sense.prototxt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense.prototxt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="79200">
+              <caret line="3600" column="6" lean-forward="false" selection-start-line="3600" selection-start-column="6" selection-end-line="3600" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GenTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessResult.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProcessResult.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="30" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -108,9 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/train/GetData.py" />
-        <option value="$PROJECT_DIR$/GenTrainVal.py" />
-        <option value="$PROJECT_DIR$/GetData.py" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/data/GetData.py" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/resnet50/resnet50.prototxt" />
         <option value="$PROJECT_DIR$/GenTrain.py" />
@@ -155,6 +170,13 @@
         <option value="$PROJECT_DIR$/modify.py" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/disparity_model/res50_corr_train.prototxt" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/disparity_model/res_segdepth.sh" />
+        <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense_test.prototxt" />
+        <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/extract_prob.sh" />
+        <option value="$PROJECT_DIR$/visualize_log/pain_loss.py" />
+        <option value="$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2.prototxt" />
+        <option value="$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2_test.prototxt" />
+        <option value="$PROJECT_DIR$/inceptionResNetV2/incepResV2_solver.prototxt" />
+        <option value="$PROJECT_DIR$/inceptionResNetV2/incepResV2.sh" />
       </list>
     </option>
   </component>
@@ -184,6 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -211,14 +234,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kaggle_Camera_Model_Identification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kaggle_Camera_Model_Identification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resnet50" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train_val" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kaggle_Camera_Model_Identification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kaggle_Camera_Model_Identification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resnet50" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resnet50_sense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kaggle_Camera_Model_Identification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kaggle_Camera_Model_Identification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inceptionResNetV2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -250,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.modify">
+  <component name="RunManager" selected="Python.pain_loss">
     <configuration default="false" name="ProcessResult" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -504,9 +576,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.modify" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pain_loss" />
         <item index="1" class="java.lang.String" itemvalue="Python.ProcessResult" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pain_loss" />
+        <item index="2" class="java.lang.String" itemvalue="Python.modify" />
         <item index="3" class="java.lang.String" itemvalue="Python.DataAug" />
         <item index="4" class="java.lang.String" itemvalue="Python.ConvertTif2Jpg" />
       </list>
@@ -530,17 +602,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3552169" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2555686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27291667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -549,6 +621,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -565,39 +638,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt" />
-    <entry file="file://$PROJECT_DIR$/resnet50/extract_36prob.sh" />
-    <entry file="file://$PROJECT_DIR$/used/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57387">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_jpg.txt" />
-    <entry file="file://$PROJECT_DIR$/result.csv" />
-    <entry file="file://$PROJECT_DIR$/result.txt" />
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="2529" column="0" lean-forward="false" selection-start-line="2529" selection-start-column="0" selection-end-line="2529" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/extract_prob.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConvertTif2Jpg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -671,13 +711,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inception_v4/deploy_inception_v4.prototxt" />
-    <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="2363" column="22" lean-forward="true" selection-start-line="2363" selection-start-column="22" selection-end-line="2363" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inception_v4/inception_v4.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -699,8 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualize_log/resnet50.log.test" />
-    <entry file="file://$PROJECT_DIR$/visualize_log/resnet50.log.train" />
     <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50_AddFC.prototxt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -715,13 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualize_log/pain_loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inception_v4/inception_v4_solver.prototxt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -729,18 +753,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC_test.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="3226" column="23" lean-forward="false" selection-start-line="3226" selection-start-column="23" selection-end-line="3226" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,15 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79486">
-          <caret line="3613" column="13" lean-forward="true" selection-start-line="3613" selection-start-column="13" selection-end-line="3613" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51658">
           <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,7 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -780,7 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +792,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inception_v4/inception_v4.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet50/resnet50_test.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="2343" column="0" lean-forward="false" selection-start-line="2343" selection-start-column="0" selection-end-line="2348" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet50/resnet50.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50105">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segdepth_train.txt" />
+    <entry file="file://$PROJECT_DIR$/seg_train.txt" />
+    <entry file="file://$PROJECT_DIR$/modify.py" />
+    <entry file="file://$PROJECT_DIR$/visualize_log/resnet50.log.test" />
+    <entry file="file://$PROJECT_DIR$/visualize_log/resnet50.log.train" />
+    <entry file="file://$PROJECT_DIR$/visualize_log/parse_log.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize_log/inception_v4.log.test" />
+    <entry file="file://$PROJECT_DIR$/visualize_log/inception_v4.log.train" />
+    <entry file="file://$PROJECT_DIR$/visualize_log/pain_loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/extract_prob.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="34" column="89" lean-forward="false" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense_test.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -800,84 +887,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inception_v4/inception_v4.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/resnet50_test.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="2343" column="0" lean-forward="false" selection-start-line="2343" selection-start-column="0" selection-end-line="2348" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/resnet50.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50105">
-          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GenTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="30" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/segdepth_train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65060">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seg_train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65060">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inception_v4/inception_v4_test.prototxt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="22">
           <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79200">
+          <caret line="3600" column="6" lean-forward="false" selection-start-line="3600" selection-start-column="6" selection-end-line="3600" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC_test.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="3223" column="0" lean-forward="false" selection-start-line="3223" selection-start-column="0" selection-end-line="3228" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2_test.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96164">
+          <caret line="14458" column="21" lean-forward="false" selection-start-line="14458" selection-start-column="21" selection-end-line="14458" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inceptionResNetV2/incepResV2_solver.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="89" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inceptionResNetV2/incepResV2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
           <folding />
         </state>
       </provider>
