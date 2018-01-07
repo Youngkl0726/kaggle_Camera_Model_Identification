@@ -6,50 +6,20 @@ layer {
   top: "data"
   top: "label"
   transform_param {
-    mirror: true
+    mirror: false
     crop_size: 299
     mean_value: 103.939
     mean_value: 116.779
     mean_value: 123.68
   }
   image_data_param {
-    source: "/mnt/lustre/yangkunlin/kaggle_camera/data/train_aug.txt"
-    batch_size: 80
-    shuffle: true
-    root_folder: "/mnt/lustre/yangkunlin/kaggle_camera/data/train_aug"
-  }
-  include {
-    phase: TRAIN
+    source: "/mnt/lustre/yangkunlin/kaggle_camera/data/${list}.txt"
+    batch_size: 16
+    shuffle: false
+    root_folder: "/mnt/lustre/yangkunlin/kaggle_camera/data/test/"
   }
 }
 
-layer {
-  name: "data"
-  type: "ImageData"
-  top: "data"
-  top: "label"
-  transform_param {
-    mirror: false
-  crop_size: 299
-    mean_value: 103.939
-    mean_value: 116.779
-    mean_value: 123.68
-  }
-  image_data_param {
-    root_folder: "/mnt/lustre/yangkunlin/kaggle_camera/data/train"
-  source: "/mnt/lustre/yangkunlin/kaggle_camera/data/val.txt"
-    batch_size: 80
-    shuffle: true
-  }
-  include { phase: TEST}
-}
-
-layer{
-   name: "gather"
-   type: "Gather"
-   bottom: "label"
-   top: "label_g"
-}
 
 layer {
   name: "stem_base/Conv2d_1a_3x3"
@@ -14459,23 +14429,41 @@ layer {
 }
 
 layer {
-   name: "gather1"
-   type: "Gather"
-   bottom: "Dropout"
-   top: "gather1"
-}
-
-layer {
-  name: "classifier1"
+  name: "fc1"
   type: "InnerProductData"
-  bottom: "gather1"
-  top: "classifier"
+  bottom: "Dropout"
+  top: "fc1"
   param {
-    lr_mult: 1
+    lr_mult: 2
     decay_mult: 1
   }
   param {
+    lr_mult: 4
+    decay_mult: 0
+  }
+  inner_product_param {
+    num_output: 256
+    weight_filler {
+      type: "msra"
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+
+layer {
+  name: "fc2"
+  type: "InnerProductData"
+  bottom: "fc1"
+  top: "fc2"
+  param {
     lr_mult: 2
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 4
     decay_mult: 0
   }
   inner_product_param {
@@ -14490,23 +14478,9 @@ layer {
   }
 }
 
-
-
-layer{
-	name: "loss1"
-	type: "SoftmaxWithLossData"
-	bottom: "classifier"
-	bottom: "label_g"
-	top: "loss"
-}
-
-layer{
-	name: "accuracy"
-	type: "Accuracy"
-	bottom: "classifier"
-	bottom: "label_g"
-	top: "accuracy"
-	include {
-       phase: TEST
-    }
+layer {
+  name: "prob"
+  type: "Softmax"
+  bottom: "fc2"
+  top: "prob"
 }

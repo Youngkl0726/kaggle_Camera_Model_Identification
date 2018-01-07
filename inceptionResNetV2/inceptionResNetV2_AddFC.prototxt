@@ -14466,16 +14466,41 @@ layer {
 }
 
 layer {
-  name: "classifier1"
+  name: "fc1"
   type: "InnerProductData"
   bottom: "gather1"
-  top: "classifier"
+  top: "fc1"
   param {
-    lr_mult: 1
+    lr_mult: 2
     decay_mult: 1
   }
   param {
+    lr_mult: 4
+    decay_mult: 0
+  }
+  inner_product_param {
+    num_output: 256
+    weight_filler {
+      type: "msra"
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+
+layer {
+  name: "fc2"
+  type: "InnerProductData"
+  bottom: "fc1"
+  top: "fc2"
+  param {
     lr_mult: 2
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 4
     decay_mult: 0
   }
   inner_product_param {
@@ -14491,11 +14516,10 @@ layer {
 }
 
 
-
 layer{
 	name: "loss1"
 	type: "SoftmaxWithLossData"
-	bottom: "classifier"
+	bottom: "fc2"
 	bottom: "label_g"
 	top: "loss"
 }
@@ -14503,7 +14527,7 @@ layer{
 layer{
 	name: "accuracy"
 	type: "Accuracy"
-	bottom: "classifier"
+	bottom: "fc2"
 	bottom: "label_g"
 	top: "accuracy"
 	include {
