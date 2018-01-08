@@ -1,0 +1,19 @@
+net: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50_pre/resnet50_sense/Resnet50_sense_Add2FC.prototxt"
+
+test_iter: 5
+test_interval: 1000
+average_loss: 20
+lr_policy: "multistep"
+base_lr: 0.01
+gamma: 0.2
+stepvalue: 25000
+stepvalue: 40000
+stepvalue: 50000
+max_iter:  60000
+display: 20
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50_pre/resnet50_sense/model_Add2FC/resnet50_sense_Add2FC"
+solver_mode: GPU
+strategy: STRATEGY_0
