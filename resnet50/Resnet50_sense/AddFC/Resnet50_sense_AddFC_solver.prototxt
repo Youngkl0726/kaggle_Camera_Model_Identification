@@ -1,0 +1,19 @@
+net: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50_pre/resnet50_sense/Resnet50_sense_AddFC.prototxt"
+
+test_iter: 5
+test_interval: 500
+average_loss: 20
+lr_policy: "multistep"
+base_lr: 0.01
+gamma: 0.1
+stepvalue: 20000
+stepvalue: 32000
+stepvalue: 38000
+max_iter:  40000
+display: 20
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "/mnt/lustre/yangkunlin/kaggle_camera/resnet50_pre/resnet50_sense/model_AddFC/resnet50_sense_AddFC"
+solver_mode: GPU
+strategy: STRATEGY_0
