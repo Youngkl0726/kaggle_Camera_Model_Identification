@@ -1,0 +1,20 @@
+net: "/mnt/lustre/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_AddFC.prototxt"
+
+test_iter: 7
+test_interval: 1000
+average_loss: 20
+lr_policy: "multistep"
+base_lr: 0.01
+gamma: 0.2
+stepvalue: 20000
+stepvalue: 40000
+stepvalue: 50000
+stepvalue: 56000
+max_iter:  60000
+display: 20
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "/mnt/lustre/yangkunlin/kaggle_camera/SE-ResNeXt-50/model_AddFC/SE-ResNeXt-50_AddFC"
+solver_mode: GPU
+strategy: STRATEGY_0
