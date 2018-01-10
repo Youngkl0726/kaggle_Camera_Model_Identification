@@ -1,0 +1,19 @@
+net: "/mnt/lustre/yangkunlin/kaggle_camera/inception_v4/inception_v4_AddFC.prototxt"
+
+test_iter: 7
+test_interval: 1000
+average_loss: 20
+lr_policy: "multistep"
+base_lr: 0.01
+gamma: 0.2
+stepvalue: 13000
+stepvalue: 23000
+stepvalue: 29000
+stepvalue: 32000
+max_iter:  35000
+display: 20
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "/mnt/lustre/yangkunlin/kaggle_camera/inception_v4/model_AddFC/incep_v4"
+solver_mode: GPU

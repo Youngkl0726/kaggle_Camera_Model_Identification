@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3592619a-53ee-40de-afce-cdf8f0b4b175" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/result.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/result.txt" afterPath="" />
-    </list>
+    <list default="true" id="3592619a-53ee-40de-afce-cdf8f0b4b175" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,70 +10,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult.coverage" NAME="ProcessResult Coverage Results" MODIFIED="1515550236446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult.coverage" NAME="ProcessResult Coverage Results" MODIFIED="1515553538168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Kaggle_Camera_Model_Identification$GetData.coverage" NAME="GetData Coverage Results" MODIFIED="1514553557767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$modify.coverage" NAME="modify Coverage Results" MODIFIED="1515161310006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$kitti_test.coverage" NAME="kitti_test Coverage Results" MODIFIED="1515488704034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$DataAug.coverage" NAME="DataAug Coverage Results" MODIFIED="1514901408467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$Naive_Ensemble.coverage" NAME="Naive_Ensemble Coverage Results" MODIFIED="1515319280235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$pain_loss.coverage" NAME="pain_loss Coverage Results" MODIFIED="1515222225277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualize_log" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$pain_loss.coverage" NAME="pain_loss Coverage Results" MODIFIED="1515554135071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualize_log" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$GenTest.coverage" NAME="GenTest Coverage Results" MODIFIED="1514708593599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ConvertTif2Jpg.coverage" NAME="ConvertTif2Jpg Coverage Results" MODIFIED="1514745423987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SE-ResNeXt-50_AddFC.prototxt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC.prototxt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SE-ResNeXt-50_AddFC_solver.prototxt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC_solver.prototxt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="76" lean-forward="false" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SE-ResNeXt-50_AddFC.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extract_prob_AddFC.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/extract_prob_AddFC.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="41" column="104" lean-forward="false" selection-start-line="41" selection-start-column="104" selection-end-line="41" selection-end-column="104" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SE-ResNeXt-50_AddFC_test.prototxt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC_test.prototxt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="3951" column="18" lean-forward="true" selection-start-line="3951" selection-start-column="18" selection-end-line="3951" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,12 +42,12 @@
       <find>ignor</find>
       <find>pool_8x8_s1_drop</find>
       <find>use_global_stats</find>
-      <find>bn</find>
       <find>disp_conv_</find>
       <find>disp_data_gather</find>
       <find>disp_conv6_disp</find>
       <find>CAFFE_DIR</find>
       <find>axpy</find>
+      <find>bn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,11 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resnet50/train_val/resnet50_AddFC_test.prototxt" />
-        <option value="$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC_test.prototxt" />
-        <option value="$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC.sh" />
-        <option value="$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet_AddFC_solver.prototxt" />
-        <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/resnet50_sense.sh" />
         <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense_solver.prototxt" />
         <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense.prototxt" />
         <option value="$PROJECT_DIR$/resnet50/train_val/resnet50_sensenet.prototxt" />
@@ -161,6 +102,11 @@
         <option value="$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC.sh" />
         <option value="$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC_test.prototxt" />
         <option value="$PROJECT_DIR$/SE-ResNeXt-50/AddFC/extract_prob_AddFC.sh" />
+        <option value="$PROJECT_DIR$/inception_v4/AddFC/inception_v4_AddFC.prototxt" />
+        <option value="$PROJECT_DIR$/inception_v4/AddFC/inception_v4_AddFC_test.prototxt" />
+        <option value="$PROJECT_DIR$/inception_v4/AddFC/extract_prob_incep_v4_AddFC.sh" />
+        <option value="$PROJECT_DIR$/inception_v4/AddFC/inception_v4_AddFC_solver.prototxt" />
+        <option value="$PROJECT_DIR$/inception_v4/AddFC/inception_v4_AddFC.sh" />
       </list>
     </option>
   </component>
@@ -213,7 +159,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SE-ResNeXt-50" />
+              <option name="myItemId" value="visualize_log" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,11 +173,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SE-ResNeXt-50" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AddFC" />
+              <option name="myItemId" value="inception_v4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ProcessResult">
+  <component name="RunManager" selected="Python.pain_loss">
     <configuration default="false" name="ProcessResult" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -528,10 +470,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ProcessResult" />
-        <item index="1" class="java.lang.String" itemvalue="Python.kitti_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Naive_Ensemble" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pain_loss" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pain_loss" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ProcessResult" />
+        <item index="2" class="java.lang.String" itemvalue="Python.kitti_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Naive_Ensemble" />
         <item index="4" class="java.lang.String" itemvalue="Python.modify" />
       </list>
     </recent_temporary>
@@ -589,40 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/seg_train.txt" />
-    <entry file="file://$PROJECT_DIR$/modify.py" />
-    <entry file="file://$PROJECT_DIR$/visualize_log/resnet50.log.test" />
-    <entry file="file://$PROJECT_DIR$/visualize_log/resnet50.log.train" />
-    <entry file="file://$PROJECT_DIR$/visualize_log/parse_log.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualize_log/inception_v4.log.test" />
-    <entry file="file://$PROJECT_DIR$/visualize_log/inception_v4.log.train" />
-    <entry file="file://$PROJECT_DIR$/visualize_log/pain_loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/extract_prob.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="34" column="89" lean-forward="false" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense_test.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resnet50/train_val/resnet50.prototxt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -859,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57654">
@@ -878,23 +778,7 @@
     <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC_test.prototxt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
-          <caret line="3951" column="18" lean-forward="true" selection-start-line="3951" selection-start-column="18" selection-end-line="3951" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC_solver.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="76" lean-forward="false" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="76" />
+          <caret line="3951" column="18" lean-forward="false" selection-start-line="3951" selection-start-column="18" selection-end-line="3951" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -907,10 +791,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/visualize_log/inception_v4.log.train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26700">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize_log/inception_v4.log.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize_log/pain_loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inception_v4/inception_v4.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22929">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC.prototxt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC_solver.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="76" lean-forward="false" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inception_v4/AddFC/extract_prob_incep_v4_AddFC.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="41" column="91" lean-forward="false" selection-start-line="41" selection-start-column="91" selection-end-line="41" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inception_v4/AddFC/inception_v4_AddFC.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inception_v4/AddFC/inception_v4_AddFC_solver.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inception_v4/AddFC/inception_v4_AddFC_test.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="973">
+          <caret line="6268" column="0" lean-forward="true" selection-start-line="6268" selection-start-column="0" selection-end-line="6268" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inception_v4/AddFC/inception_v4_AddFC.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="6288" column="18" lean-forward="false" selection-start-line="6288" selection-start-column="18" selection-end-line="6288" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inception_v4/inception_v4_solver.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
