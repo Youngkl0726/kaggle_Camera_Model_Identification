@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3592619a-53ee-40de-afce-cdf8f0b4b175" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GenTest_aug.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Add.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FlickrImageAug.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessResult_Testaug.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_pic.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resnet101/Resnet101.prototxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resnet101/Resnet101.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resnet101/Resnet101_solver.prototxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resnet101/Resnet101_test.prototxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resnet101/extract_prob.sh" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Naive_Ensemble.py" afterPath="$PROJECT_DIR$/Naive_Ensemble.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_aug.txt" afterPath="$PROJECT_DIR$/train_aug.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,76 +23,64 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult.coverage" NAME="ProcessResult Coverage Results" MODIFIED="1515595344113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Kaggle_Camera_Model_Identification$GetData.coverage" NAME="GetData Coverage Results" MODIFIED="1514553557767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$Add.coverage" NAME="Add Coverage Results" MODIFIED="1515910339402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult.coverage" NAME="ProcessResult Coverage Results" MODIFIED="1515823396776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$modify.coverage" NAME="modify Coverage Results" MODIFIED="1515161310006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$FlickrImageAug.coverage" NAME="FlickrImageAug Coverage Results" MODIFIED="1515776025417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ConvertTif2Jpg.coverage" NAME="ConvertTif2Jpg Coverage Results" MODIFIED="1514745423987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Kaggle_Camera_Model_Identification$GetData.coverage" NAME="GetData Coverage Results" MODIFIED="1514553557767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$kitti_test.coverage" NAME="kitti_test Coverage Results" MODIFIED="1515488704034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$DataAug.coverage" NAME="DataAug Coverage Results" MODIFIED="1514901408467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$Naive_Ensemble.coverage" NAME="Naive_Ensemble Coverage Results" MODIFIED="1515558845771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$Naive_Ensemble.coverage" NAME="Naive_Ensemble Coverage Results" MODIFIED="1515760552615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$DataAug.coverage" NAME="DataAug Coverage Results" MODIFIED="1515769707304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$test_pic.coverage" NAME="test_pic Coverage Results" MODIFIED="1515915344982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$pain_loss.coverage" NAME="pain_loss Coverage Results" MODIFIED="1515554135071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualize_log" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$GenTest_aug.coverage" NAME="GenTest_aug Coverage Results" MODIFIED="1515595404354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$GenTest.coverage" NAME="GenTest Coverage Results" MODIFIED="1514708593599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ConvertTif2Jpg.coverage" NAME="ConvertTif2Jpg Coverage Results" MODIFIED="1514745423987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult_Testaug.coverage" NAME="ProcessResult_Testaug Coverage Results" MODIFIED="1515639650894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Naive_Ensemble.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Naive_Ensemble.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1379">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GenTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-636">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test0.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57387">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenTest_aug.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GenTest_aug.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_aug0.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_aug0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-580325">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProcessResult.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProcessResult.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="27" />
+            <state relative-caret-position="369">
+              <caret line="28" column="85" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="85" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataAug.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataAug.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Add.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Add.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_pic.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_pic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,6 +112,14 @@
       <find>axpy</find>
       <find>bn</find>
       <find>MEMCLIENT_PATH</find>
+      <find>mdb</find>
+      <find>2456</find>
+      <find>37918029</find>
+      <find>373132</find>
+      <find>36000</find>
+      <find>276338</find>
+      <find>35411911670_ae0a75e41f_o</find>
+      <find>27099749169_aa24a86b9f</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,21 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/disparity_model/res_segdepth.sh" />
-        <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/Resnet50_sense_test.prototxt" />
-        <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/extract_prob.sh" />
-        <option value="$PROJECT_DIR$/visualize_log/pain_loss.py" />
-        <option value="$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2_test.prototxt" />
-        <option value="$PROJECT_DIR$/inceptionResNetV2/incepResV2_solver.prototxt" />
-        <option value="$PROJECT_DIR$/inceptionResNetV2/incepResV2.sh" />
-        <option value="$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2_AddFC_test.prototxt" />
-        <option value="$PROJECT_DIR$/inceptionResNetV2/incepResV2_AddFC_solver.prototxt" />
-        <option value="$PROJECT_DIR$/inceptionResNetV2/incepResV2_AddFC.sh" />
-        <option value="$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2_AddFC.prototxt" />
-        <option value="$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2.prototxt" />
-        <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/Resnet50_sense_AddFC.prototxt" />
-        <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/Resnet50_sense_AddFC_solver.prototxt" />
-        <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/resnet50_sense_AddFC.sh" />
         <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/Resnet50_sense_AddFC_test.prototxt" />
         <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/extract_prob_AddFC.sh" />
         <option value="$PROJECT_DIR$/resnet50/Resnet50_sense/Add2FC/Resnet50_sense_Add2FC.prototxt" />
@@ -167,12 +158,27 @@
         <option value="$PROJECT_DIR$/resnet101/Resnet101.sh" />
         <option value="$PROJECT_DIR$/resnet101/Resnet101_solver.prototxt" />
         <option value="$PROJECT_DIR$/resnet101/extract_prob.sh" />
-        <option value="$PROJECT_DIR$/Naive_Ensemble.py" />
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_solver.prototxt" />
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50.sh" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/disparity_core/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/GenTest_aug.py" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/sensenet_disp/example/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/ProcessResult_Testaug.py" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/extract_prob_AddFC.sh" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/extract_prob.sh" />
+        <option value="$PROJECT_DIR$/Naive_Ensemble.py" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/data/FlickrImageAug.py" />
+        <option value="$PROJECT_DIR$/FlickrImageAug.py" />
+        <option value="$PROJECT_DIR$/Add.py" />
+        <option value="$PROJECT_DIR$/TrainAug.txt" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/data/test_pic.py" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inceptionResNetV2/incepResV2/inceptionResNetV2.prototxt" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/data/flickr_images/good_jpgs" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50.prototxt" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_solver.prototxt" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50.sh" />
+        <option value="$PROJECT_DIR$/test_pic.py" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_AddFC.prototxt" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_AddFC_solver.prototxt" />
+        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_AddFC.sh" />
       </list>
     </option>
   </component>
@@ -255,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GenTest_aug">
+  <component name="RunManager" selected="Python.test_pic">
     <configuration default="false" name="ProcessResult" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,26 +281,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="pain_loss" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/visualize_log" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Kaggle_Camera_Model_Identification" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualize_log/pain_loss.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Naive_Ensemble" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="DataAug" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -307,13 +294,33 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Kaggle_Camera_Model_Identification" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Naive_Ensemble.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataAug.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="kitti_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="FlickrImageAug" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONPATH" value="/Library/Python/2.7/site-packages" />
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Kaggle_Camera_Model_Identification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FlickrImageAug.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Add" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -326,13 +333,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Kaggle_Camera_Model_Identification" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kitti_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Add.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="GenTest_aug" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test_pic" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -345,7 +352,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Kaggle_Camera_Model_Identification" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GenTest_aug.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_pic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -501,18 +508,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ProcessResult" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pain_loss" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Naive_Ensemble" />
-      <item index="3" class="java.lang.String" itemvalue="Python.kitti_test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.GenTest_aug" />
+      <item index="1" class="java.lang.String" itemvalue="Python.DataAug" />
+      <item index="2" class="java.lang.String" itemvalue="Python.FlickrImageAug" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Add" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test_pic" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.GenTest_aug" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ProcessResult" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Naive_Ensemble" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pain_loss" />
-        <item index="4" class="java.lang.String" itemvalue="Python.kitti_test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_pic" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Add" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ProcessResult" />
+        <item index="3" class="java.lang.String" itemvalue="Python.FlickrImageAug" />
+        <item index="4" class="java.lang.String" itemvalue="Python.DataAug" />
       </list>
     </recent_temporary>
   </component>
@@ -534,6 +541,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -541,8 +549,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07986111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13055556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -569,133 +577,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2_AddFC_test.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318560">
-          <caret line="14480" column="7" lean-forward="true" selection-start-line="14480" selection-start-column="7" selection-end-line="14480" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inceptionResNetV2/incepResV2_AddFC_solver.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_0.txt" />
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/extract_prob_AddFC.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/resnet50_sense_AddFC.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="113" lean-forward="false" selection-start-line="9" selection-start-column="113" selection-end-line="9" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/Resnet50_sense_AddFC_solver.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="115" lean-forward="false" selection-start-line="16" selection-start-column="115" selection-end-line="16" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Add2FC/extract_prob_Add2FC.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="41" column="114" lean-forward="false" selection-start-line="41" selection-start-column="114" selection-end-line="41" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Add2FC/Resnet50_sense_Add2FC_test.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76399">
-          <caret line="3537" column="6" lean-forward="true" selection-start-line="3537" selection-start-column="6" selection-end-line="3537" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Add2FC/resnet50_sense_Add2FC.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="113" lean-forward="false" selection-start-line="9" selection-start-column="113" selection-end-line="9" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Add2FC/Resnet50_sense_Add2FC_solver.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="117" lean-forward="false" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/Add2FC/Resnet50_sense_Add2FC.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="3630" column="14" lean-forward="true" selection-start-line="3630" selection-start-column="14" selection-end-line="3630" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resnet50/Resnet50_sense/AddFC/Resnet50_sense_AddFC.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="3634" column="0" lean-forward="false" selection-start-line="3634" selection-start-column="0" selection-end-line="3643" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/SE-ResNeXt-50_solver.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inceptionResNetV2/inceptionResNetV2_test.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="14455" column="0" lean-forward="false" selection-start-line="14455" selection-start-column="0" selection-end-line="14460" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/SE-ResNeXt-50.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/extract_prob.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/SE-ResNeXt-50.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85994">
-          <caret line="3952" column="0" lean-forward="true" selection-start-line="3952" selection-start-column="0" selection-end-line="3975" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/SE-ResNeXt-50_test.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85525">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GetData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-983">
@@ -705,13 +586,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kitti_test.txt" />
     <entry file="file://$PROJECT_DIR$/kitti_test.py" />
-    <entry file="file://$PROJECT_DIR$/result.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57654">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC/SE-ResNeXt-50_AddFC_test.prototxt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -854,35 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Naive_Ensemble.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1379">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test0.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57387">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GenTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-636">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,15 +739,191 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.csv" />
+    <entry file="file://$PROJECT_DIR$/prob_0.npy" />
+    <entry file="file://$PROJECT_DIR$/ProcessResult_Testaug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/used/full_train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="2475" column="1" lean-forward="false" selection-start-line="2475" selection-start-column="1" selection-end-line="2475" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_aug0.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580325">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_jpg0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Naive_Ensemble.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConvertTif2Jpg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/used/train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flickr_images/iPhone-6/24544849707_bcc3ef777c_o_comp90.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flickr_images/Motorola-Droid-Maxx/urls_final">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="395" column="0" lean-forward="false" selection-start-line="395" selection-start-column="0" selection-end-line="395" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flickr_images/Samsung-Galaxy-Note3/urls_final">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="253" column="1" lean-forward="false" selection-start-line="253" selection-start-column="1" selection-end-line="253" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4840">
+          <caret line="220" column="1" lean-forward="false" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlickrImageAug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="92" column="24" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flickr_aug.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="28" column="85" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_aug.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flickr_images/iPhone-6/urls_final">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="427" column="0" lean-forward="false" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flickr_images/good_jpgs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataAug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrainAug.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1002114">
+          <caret line="22613" column="24" lean-forward="false" selection-start-line="22613" selection-start-column="24" selection-end-line="22613" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,7 +6,7 @@ npy = []
 for i in xrange(2):
     npy_name = 'prob_{:0}.npy'.format(i)
     npy.append(np.load(npy_name))
-npy_add = npy[0] + 1.0*npy[1]
+npy_add = 1.5*npy[0] + 1.3*npy[1]
 txt_file = open('result.txt', 'wb')
 for i in xrange(2640):
     res = int(np.where(npy_add[i] == np.max(npy_add[i]))[0][0])
@@ -40,17 +40,19 @@ for i in xrange(2640):
     context.append(str_name[int(line[0])])
     writer.writerow(context)
 csvfile.close()
-
+print "average Ensemble over!"
 
 # # max
-#
+
 # npy = []
 # for i in xrange(2):
 #     npy_name = 'prob_{:0}.npy'.format(i)
 #     npy = np.load(npy_name)
 #     txt_file = open('result_{:0}.txt'.format(i), 'wb')
 #     for j in xrange(2640):
+#         # print npy[j]
 #         max_prob = npy[j].max()
+#         # print max_prob
 #         res = int(np.where(npy[j] == np.max(npy[j]))[0][0])
 #         txt_file.write(str(max_prob)+' '+str(res)+'\n')
 #     txt_file.close()
@@ -93,7 +95,9 @@ csvfile.close()
 #     id = []
 #     id.append(line1[1])
 #     id.append(line2[1])
-#
+#     # print prob, id
+#     # print prob.index(max(prob))
+#     # print id[prob.index(max(prob))]
 #     ans_id = int(id[prob.index(max(prob))])
 #
 #     context.append(fname[i])
