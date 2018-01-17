@@ -4773,7 +4773,7 @@ layer { name: "loss1/fc2_relu" type: "ReLU" bottom: "loss1_fc2" top: "loss1_fc2"
 layer { name: "loss1/drop2_fc"  type: "Dropout"  bottom: "loss1_fc2"  top: "loss1_fc2"  dropout_param {dropout_ratio: 0.8 } }
 layer {name: "loss1/classifier_dy" type: "InnerProduct"  bottom: "loss1_fc2"  top: "loss1/classifier"
   param {lr_mult: 1 decay_mult: 1} param {lr_mult: 1 decay_mult: 0 }
-  inner_product_param { num_output: 3 weight_filler {type: "xavier" } bias_filler {type: "constant" value: 0} } }
+  inner_product_param { num_output: 10 weight_filler {type: "xavier" } bias_filler {type: "constant" value: 0} } }
 layer {
   name: "loss1/loss"
   type: "SoftmaxWithLoss" 
@@ -4815,7 +4815,7 @@ layer { name: "loss2/fc2_relu" type: "ReLU" bottom: "loss2_fc2" top: "loss2_fc2"
 layer { name: "loss2/drop2_fc"  type: "Dropout"  bottom: "loss2_fc2"  top: "loss2_fc2"  dropout_param {dropout_ratio: 0.8 } }
 layer {name: "loss2/classifier_dy" type: "InnerProduct"  bottom: "loss2_fc2"  top: "loss2/classifier"
   param {lr_mult: 1 decay_mult: 1} param {lr_mult: 1 decay_mult: 0 }
-  inner_product_param { num_output: 3 weight_filler {type: "xavier" } bias_filler {type: "constant" value: 0} } }
+  inner_product_param { num_output: 10 weight_filler {type: "xavier" } bias_filler {type: "constant" value: 0} } }
 layer {
   name: "loss2/loss"
   type: "SoftmaxWithLoss" 
