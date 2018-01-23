@@ -3,10 +3,13 @@ import csv
 
 # average
 npy = []
+a = 1.0
+b = 1.0
+c = 1.1
 for i in xrange(2):
     npy_name = 'prob_{:0}.npy'.format(i)
     npy.append(np.load(npy_name))
-npy_add = 1.5*npy[0] + 1.3*npy[1]
+npy_add = a*npy[0] + b*npy[1]
 txt_file = open('result.txt', 'wb')
 for i in xrange(2640):
     res = int(np.where(npy_add[i] == np.max(npy_add[i]))[0][0])
@@ -40,7 +43,7 @@ for i in xrange(2640):
     context.append(str_name[int(line[0])])
     writer.writerow(context)
 csvfile.close()
-print "average Ensemble over!"
+print a, " and ", b, " average Ensemble over!"
 
 # # max
 
