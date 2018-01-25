@@ -2,7 +2,7 @@ import numpy as np
 import csv
 
 txt_file = open('result.txt', 'wb')
-npy_name = 'res2.npy'
+npy_name = 'res_fc .npy'
 npy = np.load(npy_name)
 # print npy[0]
 # print np.where(npy[0] == np.max(npy[0]))[0][0]
