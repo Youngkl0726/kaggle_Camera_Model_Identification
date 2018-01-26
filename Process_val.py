@@ -2,7 +2,7 @@ import numpy as np
 import csv
 
 txt_file = open('result_val.txt', 'wb')
-npy_name = 'prob_0_val.npy'
+npy_name = 'prob_0.npy'
 print npy_name
 npy = np.load(npy_name)
 # print npy[0]
@@ -47,5 +47,6 @@ for i in xrange(4950):
         print i, res_pd[i], res_gt[i]
 print num
 print (num*1.0) / 4950.0
+print "loss: "
 for i in xrange(10):
     print i, cnt[i]
