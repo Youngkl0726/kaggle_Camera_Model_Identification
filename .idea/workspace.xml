@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3592619a-53ee-40de-afce-cdf8f0b4b175" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Process_val.py" afterPath="$PROJECT_DIR$/Process_val.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result_val.txt" afterPath="$PROJECT_DIR$/result_val.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiCropClassifier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestMultiCrop.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTC1M7_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LG5x_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MDMaxx_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/galaxy_N3_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/galaxy_S4_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iphone4s_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iphone6_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/motoN6_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/motoxFile.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Naive_Ensemble.py" afterPath="$PROJECT_DIR$/Naive_Ensemble.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProcessResult.py" afterPath="$PROJECT_DIR$/ProcessResult.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,9 +27,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$Add.coverage" NAME="Add Coverage Results" MODIFIED="1515910339402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$static.coverage" NAME="static Coverage Results" MODIFIED="1516870036575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult.coverage" NAME="ProcessResult Coverage Results" MODIFIED="1517318221930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ProcessResult.coverage" NAME="ProcessResult Coverage Results" MODIFIED="1517374219963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$MotoX_aug.coverage" NAME="MotoX_aug Coverage Results" MODIFIED="1516715986797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$modify.coverage" NAME="modify Coverage Results" MODIFIED="1515161310006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$TestMultiCrop.coverage" NAME="TestMultiCrop Coverage Results" MODIFIED="1517389177976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$FlickrImageAug.coverage" NAME="FlickrImageAug Coverage Results" MODIFIED="1515776025417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$ConvertTif2Jpg.coverage" NAME="ConvertTif2Jpg Coverage Results" MODIFIED="1514745423987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$Process_val.coverage" NAME="Process_val Coverage Results" MODIFIED="1517323444954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -27,7 +40,7 @@
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$process_XGB.coverage" NAME="process_XGB Coverage Results" MODIFIED="1516870208941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$DataAug.coverage" NAME="DataAug Coverage Results" MODIFIED="1515769707304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$test_pic.coverage" NAME="test_pic Coverage Results" MODIFIED="1515915344982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$Naive_Ensemble.coverage" NAME="Naive_Ensemble Coverage Results" MODIFIED="1517318480965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$Naive_Ensemble.coverage" NAME="Naive_Ensemble Coverage Results" MODIFIED="1517380586236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$GenTest_aug.coverage" NAME="GenTest_aug Coverage Results" MODIFIED="1515595404354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$pain_loss.coverage" NAME="pain_loss Coverage Results" MODIFIED="1515992169660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualize_log" />
     <SUITE FILE_PATH="coverage/kaggle_Camera_Model_Identification$GenTest.coverage" NAME="GenTest Coverage Results" MODIFIED="1514708593599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -36,22 +49,50 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Process_val.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Process_val.py">
+      <file leaf-file-name="MultiCropClassifier.py" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/MultiCropClassifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="308">
+              <caret line="132" column="19" lean-forward="true" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+              <folding>
+                <element signature="e#87#105#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="val_aug.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/val_aug.txt">
+      <file leaf-file-name="MultiCropClassifier.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MultiCropClassifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20409">
-              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="1017">
+              <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+              <folding>
+                <element signature="e#87#105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestMultiCrop.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestMultiCrop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-350">
+              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessResult.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProcessResult.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,6 +133,10 @@
       <find>35411911670_ae0a75e41f_o</find>
       <find>27099749169_aa24a86b9f</find>
       <find>loss</find>
+      <find>myself</find>
+      <find>pred</find>
+      <find>caffe_root</find>
+      <find>propa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,13 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/extract_prob_AddFC.sh" />
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inception_v4/extract_prob_incep_v4.sh" />
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inceptionResNetV2/extract_prob.sh" />
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inception_v4/inception_v4_AddFC_test.prototxt" />
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inceptionResNetV2/extract_prob_AddFC.sh" />
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inceptionResNetV2/incepResV2/incepResV2_AddFC_solver.prototxt" />
-        <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inceptionResNetV2/incepResV2/incepResV2_AddFC.sh" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inceptionResNetV2/incepResV2/incepResV2_aug.sh" />
         <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_solver.prototxt" />
         <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50.sh" />
@@ -139,7 +177,6 @@
         <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_AddFC_2.sh" />
         <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/extract_prob.sh" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/kaggle_camera/inceptionResNetV2/incepResV2/incepResV2_aug_solver.prototxt" />
-        <option value="$PROJECT_DIR$/Naive_Ensemble.py" />
         <option value="$PROJECT_DIR$/MotoX_aug.py" />
         <option value="$PROJECT_DIR$/motoN6_file.txt" />
         <option value="$PROJECT_DIR$/process_XGB.py" />
@@ -151,6 +188,14 @@
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/disparity_model/res50_segdepth_finetune_solver.prototxt" />
         <option value="&lt;8d734156-6526-4d83-bbaf-e78db559c172&gt;/yangkunlin/disparity_model/res_segdepth_finetune.sh" />
         <option value="$PROJECT_DIR$/Process_val.py" />
+        <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/MultiCropTest.sh" />
+        <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_multi.prototxt" />
+        <option value="$PROJECT_DIR$/ProcessResult.py" />
+        <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/SE-ResNeXt-50_Adam_solver.prototxt" />
+        <option value="$PROJECT_DIR$/Naive_Ensemble.py" />
+        <option value="&lt;9db21051-06f7-4e1d-b791-ce2be21995ab&gt;/yangkunlin/kaggle_camera/SE-ResNeXt-50/MultiCropClassifier.py" />
+        <option value="$PROJECT_DIR$/MultiCropClassifier.py" />
+        <option value="$PROJECT_DIR$/TestMultiCrop.py" />
       </list>
     </option>
   </component>
@@ -233,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Process_val">
+  <component name="RunManager" selected="Python.TestMultiCrop">
     <configuration default="false" name="ProcessResult" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -248,25 +293,6 @@
       <module name="Kaggle_Camera_Model_Identification" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProcessResult.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="process_XGB" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Kaggle_Camera_Model_Identification" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process_XGB.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -324,6 +350,25 @@
       <module name="Kaggle_Camera_Model_Identification" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Naive_Ensemble.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestMultiCrop" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Kaggle_Camera_Model_Identification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestMultiCrop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -479,18 +524,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ProcessResult" />
-      <item index="1" class="java.lang.String" itemvalue="Python.process_XGB" />
-      <item index="2" class="java.lang.String" itemvalue="Python.BalanceTrain" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Process_val" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Naive_Ensemble" />
+      <item index="1" class="java.lang.String" itemvalue="Python.BalanceTrain" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Process_val" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Naive_Ensemble" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TestMultiCrop" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Process_val" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TestMultiCrop" />
         <item index="1" class="java.lang.String" itemvalue="Python.Naive_Ensemble" />
         <item index="2" class="java.lang.String" itemvalue="Python.ProcessResult" />
-        <item index="3" class="java.lang.String" itemvalue="Python.BalanceTrain" />
-        <item index="4" class="java.lang.String" itemvalue="Python.process_XGB" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Process_val" />
+        <item index="4" class="java.lang.String" itemvalue="Python.BalanceTrain" />
       </list>
     </recent_temporary>
   </component>
@@ -519,8 +564,8 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24618992" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22708334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15416667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -543,31 +588,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC_AddDp/SE-ResNeXt-50_AddFC_AddDp.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC_AddDp/SE-ResNeXt-50_AddFC_AddDp_solver.prototxt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="94" lean-forward="false" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/AddFC_AddDp/SE-ResNeXt-50_AddFC_AddDp.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resnet101/AddFC/Resnet101_AddFC_test.prototxt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -643,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataAug.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_pic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -671,14 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1250">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GenTest_aug.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -909,28 +919,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Naive_Ensemble.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57605">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SE-ResNeXt-50/SE-ResNeXt-50.prototxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -945,9 +945,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Process_val.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        <state relative-caret-position="226">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataAug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="45" column="15" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenTest_aug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Naive_Ensemble.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMultiCrop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiCropClassifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1017">
+          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding>
+            <element signature="e#87#105#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

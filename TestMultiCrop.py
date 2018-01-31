@@ -2,7 +2,7 @@ import numpy as np
 import csv
 
 txt_file = open('result.txt', 'wb')
-npy_name = 'prob_0.npy'
+npy_name = 'prob_1.npy'
 print npy_name
 npy = np.load(npy_name)
 # print npy[0],npy[1]
