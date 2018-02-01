@@ -29,8 +29,8 @@ class Classifier(caffe.Net):
         preprocessing options.
     """
     def __init__(self, model_file, pretrained_file, image_dims=None,
-            mean=None, raw_scale=255,
-            channel_swap=(2,1,0), input_scale=None):
+            mean=None, raw_scale=None,
+            channel_swap=None, input_scale=None):
         caffe.Net.__init__(self, model_file, pretrained_file, caffe.TEST)
 
         # configure pre-processing
@@ -114,8 +114,6 @@ def make_inputs(image_dir, textfile):
         # print image
         # print os.path.join(image_dir, image)
         img = cv2.imread(os.path.join(image_dir, image))
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        img = img/255
         # img = caffe.io.load_image(os.path.join(image_dir, image))
         inputs.append(img)
     return inputs
@@ -138,5 +136,4 @@ model_weights = '/mnt/lustre/yangkunlin/kaggle_camera/SE-ResNeXt-50/model_aug2-1
 test_dir = '/mnt/lustre/yangkunlin/kaggle_camera/data/test/'
 test_txt = '/mnt/lustre/yangkunlin/kaggle_camera/data/test0.txt'
 doClassify(model_def, model_weights, test_dir, test_txt)
-
 

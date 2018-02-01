@@ -6,10 +6,10 @@ npy = []
 a = 1.0
 b = 1.0
 c = 1.0
-for i in xrange(3):
+for i in xrange(4):
     npy_name = 'prob_{:0}.npy'.format(i)
     npy.append(np.load(npy_name))
-npy_add = a*npy[0] + b*npy[1] + c*npy[2]
+npy_add = a*npy[0] + b*npy[1] + c*npy[2] + npy[3]
 txt_file = open('result.txt', 'wb')
 for i in xrange(2640):
     res = int(np.where(npy_add[i] == np.max(npy_add[i]))[0][0])

@@ -5,12 +5,15 @@ txt_file = open('result.txt', 'wb')
 npy_name = 'prob_1.npy'
 print npy_name
 npy = np.load(npy_name)
-# print npy[0],npy[1]
+print npy[0],npy[1]
 # print np.where(npy[0] == np.max(npy[0]))[0][0]
 len = npy.shape[0]
 print len
 for j in xrange(len):
+
     res = int(np.where(npy[j] == np.max(npy[j]))[0][0])
+    if j == 0 or j == 1:
+        print res
     txt_file.write(str(res)+'\n')
 txt_file.close()
 
