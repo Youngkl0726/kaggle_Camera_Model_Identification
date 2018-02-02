@@ -23,8 +23,7 @@ class Classifier(caffe.Net):
     by scaling, center cropping, or oversampling.
     Parameters
     ----------
-    image_dims : dimensions to scale input for cropping/sampling.
-        Default is to scale to net input size for whole-image crop.
+    image_dims : Image_dims is the real-dims of an image, just useful when doing crop.
     mean, input_scale, raw_scale, channel_swap: params for
         preprocessing options.
     """
@@ -47,10 +46,12 @@ class Classifier(caffe.Net):
         if channel_swap is not None:
             self.transformer.set_channel_swap(in_, channel_swap)
 
-        self.crop_dims = np.array(self.blobs[in_].data.shape[2:])
+        self.crop_dims = np.array(self.blobs[in_].data.shape[2:]) # crop_dims are the input-dims of the Net, 
+        # Image_dims is the real-dims of an image, just useful when doing crop.
         if not image_dims:
             image_dims = self.crop_dims
         self.image_dims = image_dims
+
 
     def predict(self, inputs, oversample=True):
         """
@@ -73,7 +74,10 @@ class Classifier(caffe.Net):
             inputs[0].shape[2]),
             dtype=np.float32)
         for ix, in_ in enumerate(inputs):
-            input_[ix] = caffe.io.resize_image(in_, self.image_dims)
+            if(in_.shape[0]!=self.image_dims[0] or in_.shape[1]!=self.image_dims[1]):
+                input_[ix] = caffe.io.resize_image(in_, self.image_dims)
+            else:
+                input_[ix] = in_
 
         if oversample:
             # Generate center, corner, and mirrored crops.
@@ -113,9 +117,10 @@ def make_inputs(image_dir, textfile):
         image = line.split(' ')[0]
         # print image
         # print os.path.join(image_dir, image)
-        img = cv2.imread(os.path.join(image_dir, image))
-        # img = caffe.io.load_image(os.path.join(image_dir, image))
+        img = cv2.imread(os.path.join(image_dir, image),-1)
         inputs.append(img)
+        # img = caffe.io.load_image(os.path.join(image_dir, image))
+       
     return inputs
 
 
@@ -123,7 +128,7 @@ def doClassify(model_def, model_weights, test_dir, test_txt):
     caffe.set_mode_gpu()
     model_def = model_def
     model_weights = model_weights
-    predictor = Classifier(model_def, model_weights, image_dims=(224, 224), mean=np.array([103.939, 116.779, 123.68], dtype='float64'))
+    predictor = Classifier(model_def, model_weights, image_dims=(512, 512), mean=np.array([103.939, 116.779, 123.68], dtype='float64'))
     inputs = make_inputs(test_dir, test_txt)
     pred = predictor.predict(inputs, oversample=True)
     # print(pred)
