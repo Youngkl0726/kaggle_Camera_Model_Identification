@@ -6,8 +6,8 @@ import numpy as np
 # The caffe module needs to be on the Python path;
 #  we'll add it here explicitly.
 import sys
-caffe_root = '/mnt/lustre/yangkunlin/sensenet_disp/'
-myself = '/mnt/lustre/yangkunlin/kaggle_camera/SE-ResNeXt-50/'
+caffe_root = ''
+myself = ''
 sys.path.insert(0, caffe_root + 'core/python')
 import caffe
 caffe.mpi_init()
@@ -132,13 +132,13 @@ def doClassify(model_def, model_weights, test_dir, test_txt):
     inputs = make_inputs(test_dir, test_txt)
     pred = predictor.predict(inputs, oversample=True)
     # print(pred)
-    np.save('/mnt/lustre/yangkunlin/kaggle_camera/SE-ResNeXt-50/rst/prob_1.npy', pred)
+    np.save('./rst/prob_1.npy', pred)
     caffe.mpi_fin()
 
 
-model_def = myself+'SE-ResNeXt-50_multi.prototxt'
-model_weights = '/mnt/lustre/yangkunlin/kaggle_camera/SE-ResNeXt-50/model_aug2-1/SE-ResNeXt-50_iter_200000.caffemodel'
-test_dir = '/mnt/lustre/yangkunlin/kaggle_camera/data/test/'
-test_txt = '/mnt/lustre/yangkunlin/kaggle_camera/data/test0.txt'
+model_def = myself+''
+model_weights = ''
+test_dir = ''
+test_txt = ''
 doClassify(model_def, model_weights, test_dir, test_txt)
 
