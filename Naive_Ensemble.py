@@ -3,13 +3,15 @@ import csv
 
 # average
 npy = []
-a = 1.0
+a = 1.1
 b = 1.0
-c = 1.0
-for i in xrange(4):
+c = 0.9
+for i in xrange(3):
     npy_name = 'prob_{:0}.npy'.format(i)
     npy.append(np.load(npy_name))
-npy_add = a*npy[0] + b*npy[1] + c*npy[2] + npy[3]
+print npy[0][0], npy[1][0], npy[2][0]
+npy_add = b*npy[0] + a*npy[1] + c*npy[2] # 0.981
+print npy_add[0]
 txt_file = open('result.txt', 'wb')
 for i in xrange(2640):
     res = int(np.where(npy_add[i] == np.max(npy_add[i]))[0][0])

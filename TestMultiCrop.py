@@ -1,10 +1,25 @@
 import numpy as np
 import csv
 
+
+val = []
+ori_file_path = "/Users/youngkl/Desktop/test_prob/"
+for i in xrange(53):
+    file = "prob_test_{}.npy".format(i)
+    # print file
+    npy_file = np.load(ori_file_path + file)
+    # print npy_file.shape
+    if (len(val) > 0):
+        val = np.concatenate((val, npy_file), axis=0)
+    else:
+        val = npy_file
+
+
 txt_file = open('result.txt', 'wb')
-npy_name = 'prob_1.npy'
-print npy_name
-npy = np.load(npy_name)
+npy = val
+# npy_name = 'prob_1.npy'
+# print npy_name
+# npy = np.load(npy_name)
 print npy[0],npy[1]
 # print np.where(npy[0] == np.max(npy[0]))[0][0]
 len = npy.shape[0]
